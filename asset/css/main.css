@@ -1,6 +1,35 @@
 body {
-    background-color: rgb(181, 251, 253);
+    background: url(../img/main-bg.png) no-repeat;
+    background-color: rgba(0,0,0,0.9);
+    /* background-size: cover; */
+    color: #fff;
+    font-size: 18px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 .warning {
     padding: 1em;
     background-color: rgba(255, 0, 0, 0.664);
@@ -52,4 +81,8 @@ label {
 
 .submit:hover {
     background-color: #22effd;
+}
+
+ul, li{
+    list-style-type: circle;
 }
