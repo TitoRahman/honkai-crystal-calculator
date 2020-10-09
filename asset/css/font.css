@@ -1,0 +1,8 @@
+@font-face {
+    font-family: KumbhSans;
+    src: url('../font/KumbhSans-Regular.ttf');
+  }
+
+body {
+    font-family: KumbhSans;
+}

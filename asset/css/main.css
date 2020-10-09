@@ -1,0 +1,55 @@
+body {
+    background-color: rgb(181, 251, 253);
+}
+.warning {
+    padding: 1em;
+    background-color: rgba(255, 0, 0, 0.664);
+    text-align: center;
+}
+a{
+    cursor: pointer;
+}
+.close {
+    padding: 0.1em;
+}
+
+
+.main {
+    padding: 0.5em;
+    text-align: center;
+}
+
+.start-button {
+    font-size: 5em;
+}
+.start-button > img {
+    width: 1em;
+}
+.arrow {
+    cursor: pointer;
+}
+
+.data-form > form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding: .5em 0;
+}
+
+.submit {
+    width: 100%;
+    background-color: #52f3ff;
+    color: white;
+    padding: 1em 1.5em;
+    margin: .5em 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #22effd;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HONKAI CRYSTAL INCOME CALCULATOR</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="asset/css/main.css">
+    <link rel="stylesheet" href="asset/css/font.css">
+    <link rel="stylesheet" href="asset/css/adjust.css">
+</head>
+
+<body>
+    <div class="warning" id="warning">
+        <b>DO NOTE THIS IS NOT 100% ACCURATE THIS IS JUST ACCUMULATION</b>
+        <br><br><a class="close" onclick="closeWarning()">I UNDERSTAND</a>
+    </div>
+
+    <div class="main">
+        <div class="data-form">
+            <form action="">
+                <label for="level">CAPTAIN LEVEL</label>
+                <input type="number" id="level" placeholder="LEVEL 1-85" min="1" max="85">
+
+                <label for="rank">ABYSS RANK</label>
+                <select id="rank">
+                    <option value="forbidden">FORBIDDEN</option>
+                    <option value="sinful">SINFUL</option>
+                    <option value="agony">AGONY</option>
+                    <option value="rl">RED LOTUS</option>
+                    <option value="myriad">NIRVANA / MYRIAD</option>
+                </select>
+
+                <label id="tier-label" for="tier" style="display: none;">ABYSS TIER</label>
+                <select id="tier" style="display: none;">
+                    <option value="1">I</option>
+                    <option value="2">II</option>
+                    <option value="3">III</option>
+                </select>
+
+                <label for="monthly">MONTHLY</label>
+                <select id="monthly">
+                    <option value="yes">YES</option>
+                    <option value="no">NO</option>
+                </select>
+
+                <label for="bp">BATTLE PASS</label>
+                <select id="bp">
+                    <option value="yes">YES</option>
+                    <option value="no">NO</option>
+                </select>
+                
+                <label for="days">HOW MANY DAYS</label>
+                <input type="number" id="days" min="1" placeholder="DAYS TO COUNT">
+            </form>
+            <br>
+            <a class="submit" onclick="count()">CALCULATE</a>
+        </div>
+        <br> <br>
+        <div id="result">
+
+        </div>
+        <br>
+        <a onclick="help()" >DOES IT WORK?</a>
+    </div>
+    <script src="asset/script/index.js"></script>
+</body>
+
+</html>
