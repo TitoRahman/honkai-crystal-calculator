@@ -4,14 +4,7 @@ let closeWarning = () => { // CLose top warning
 
 let helpOpen = false;
 let help = () => { //show or close How it work
-    if (helpOpen == false) {
-        document.getElementById('how').style.display = 'block';
-        helpOpen = true;
-    }   
-    else {
-        document.getElementById('how').style.display = 'none';
-        helpOpen = false;
-    } 
+    return alert("Contact is not available for now sorry")
 }
 
 
