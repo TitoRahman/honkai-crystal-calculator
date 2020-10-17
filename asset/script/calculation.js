@@ -7,9 +7,9 @@ let calculate = (Days, Monthly, Battlepass, Level, Abyss, Tier) => {
         result += 45; //Daily log in
         if (Monthly == 'yes') { //Counting Monthly
             result += 60;
-            if (i == 0) {
+            if (i == 0 || i%30 == 0) {
                 result += 330;
-            } else if (i%15 == 0){
+            }if (i%15 == 0 && i != 0){
                 result += 500;
             }
         }
